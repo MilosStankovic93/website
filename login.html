@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	
+	<title>Login</title>
+</head>
+<body>
+
+	
+
+	<header id="header">
+		<div class="wrapper">
+
+			<div class="logo">
+				<a href="index.html"><img src="uho4.png"></a>
+			</div>
+			<nav class="nav">
+					
+				<ul>
+					<li><a href="index.html"> Naslovna </a></li>
+					<li><a href="onama.html"> O nama </a></li>	
+					<li><a href="cenovnik.html"> Cenovnik </a></li>
+					<li><a href="kontakt.html"> Kontakt </a></li>
+					<li><button onclick="log_in_page()" id="lgn_btn">Login</button></li>
+					<li><button onclick="registerpg()" id="rgr_btn">Register</button></li>
+					<li><button id="logout_btn" class="hidden-element" onclick="Logout()">Logout</button></li>
+				</ul>
+
+			</nav> <!-- end #nav -->
+
+
+		</div> <!-- end .wrapper -->
+	
+	</header>
+
+	<div id="logged_in_forma" class="hidden-element">
+		<section class="kontakt2 hidden-element">
+			<div class="container">
+				<div class="contactInfo">
+					<div>
+						<h2> KONTAKT </h2>
+						<ul class="informacija">
+							<li>
+								<i class="fa fa-map-marker"></i>
+							 	<span> Hadži Ruvimova 50 <br>Novi Sad, Srbija </span>
+							</li>
+
+							<li>
+							 	<i class="fa fa-phone"></i>
+							 	<span> +381 69 5140 906</span>
+							</li>
+
+							<li>
+							 	<i class="fa fa-envelope-o"></i>
+							 	<span> audiologija@outlook.com </span>
+							</li>
+
+							<li>
+							 	<i class="fa fa-clock-o"></i>
+							 	<span> Radno vreme:<br>Ponedeljak-Petak: 10h-16h </span>
+							</li>
+						</ul>
+						
+					</div>
+				</div> <!--end .contactinfo-->
+
+				<div class="contactForm">
+					<div id="noneuserForma">
+						<h2>Da bi ste zakazali pregled morate biti ulogovani.</h2>
+					</div>
+					<div id="userForma" class="hidden-element">
+					<h2>Kontaktirajte nas</h2>
+					<form class="formBox" action="mailto:milosh_cerak@hotmail.com" method="post" enctype="text/plain">
+						
+						<div class="inputBox br1">
+							
+							<input type="text" name="Ime" required>
+							<span> First Name / Ime </span>
+						</div>
+
+						<div class="inputBox br1">
+							<input type="text" name="Prezime" required>
+							<span>Last name / Prezime</span>
+						</div>
+
+						<div class="inputBox br1">
+							<input type="text" name="Mail" required>
+							<span>E-mail adress / E-mail adresa</span>
+						</div>
+
+						<div class="inputBox br1">
+							<input type="text" name="Telefon" required>
+							<span>Mobile number / Mobilni telefon</span>
+						</div>
+
+						<div class="inputBox br2">
+							<textarea name="Komentar" required></textarea>
+							<span>Your message / Vaša poruka:</span>
+						</div>
+
+						<div class="inputBox br2">
+							<input type="submit" value="Pošalji">
+							<input type="reset" value="Obriši">
+							
+						</div>
+
+					</form>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+		
+	</div>
+
+	
+
+
+	<div class="login_wrapper">
+		<div id="login_container" class="login_container">
+			<input id="input_lgn_email" type="text" placeholder="E-mail:">	
+			<input  id="input_lgn_password" type="password" placeholder="Password:">
+			
+			<br>
+			<button onclick="btnHandleLogin()" id="lgn_btn">Login</button>
+			<div><p>or</p></div>
+			<button onclick="registerpg()" id="rgr_btn">Register</button>
+			<div id="text-error" class="error-message"></div>
+		</div>
+
+
+		<button id="logout_btn" class="hidden-element" onclick="Logout()">Logout</button>
+
+	</div>
+<script src="JS/funkcije.js"></script> 
+
+</body>
+</html>

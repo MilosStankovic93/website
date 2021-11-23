@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 
+	<title>Audiologija</title>
+</head>
+<body>
+	
+
+	<div id="cover">
+		
+
+		<header id="header">
+		<div class="wrapper">
+
+			<div class="logo">
+				<a href="index.html"><img src="uho4.png"></a>
+			</div>
+			<nav class="nav">
+					
+				<ul>
+					<li><a href="index.html"> Naslovna </a></li>
+					<li><a href="onama.html"> O nama </a></li>	
+					<li><a href="cenovnik.html"> Cenovnik </a></li>
+					<li><a href="kontakt.html"> Kontakt </a></li>
+					<li><button onclick="log_in_page()" id="lgn_btn">Login</button></li>
+					<li><button onclick="registerpg()" id="rgr_btn">Register</button></li>
+					<li><button id="logout_btn" class="hidden-element" onclick="Logout()">Logout</button></li>
+				</ul>
+
+			</nav> <!-- end #nav -->
+
+
+		</div> <!-- end .wrapper -->
+	
+		</header>
+
+
+		<button onclick="vrati2()" id="vratigore" class="hidden-element"><i class="arrowUp"></i></button>
+
+
+		<div id="cover2">
+
+			<div class="wrapper wrapper-text">
+				<h1>Vibroakustika.</h1>
+				<p>Ruska uspesna popularna naturalna metoda u medicini. <br> Fizika u sluzbi zdravlja. Metoda se koristi u prevenciji takodje kao prirodni resurs imuniteta naseg organizma, antistres program, rehabilitacija postojecih bolesti i uspesna u sportskoj medicini.</p>
+				<button id="btn" onclick="zakazi_page()"><b>Zakazite pregled</b></button>
+			</div>
+		</div><!-- end #cover2 -->
+		
+	</div> <!-- end #cover -->
+
+
+	<div id="central">
+
+		
+
+		
+
+		
+
+		<div class="wrapper">
+
+			<main class="main">
+                
+               		<div id="dveslike">
+						<div class="dves">
+							<img id="s1" src="Pictures/doktor3.jpg">
+							<img id="s2" src="Pictures/doktor.jpg">
+								
+						</div>
+					<div class="fdesno">
+                		<p> Vibroakustički centar Audiologija je osnovan 2008. godine u Beogradu.<br><span id="plavtekst">Centar se bavi medicinskom edukacijom i rehabilitacijom, a takođe i medicinskom dijagnostikom.</span><br></p>
+                		<p id="novitekst">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magni, illo placeat veniam nobis ullam cupiditate ratione, non voluptatem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda tempora, reprehenderit quos autem sint animi, id saepe dolor labore reiciendis repudiandae accusamus quas magnam nulla minus deleniti dolores velit eligendi et in minima. Debitis voluptatem hic, veniam quia obcaecati officiis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae fuga, cupiditate possimus esse rerum.<br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magni, illo placeat veniam nobis ullam cupiditate ratione, non voluptatem. Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>  
+					</div>
+
+					</div> 
+
+
+
+            </main>
+
+		</div> <!-- end .wrapper -->
+
+	</div> <!-- end #central -->
+
+
+	<div id="trislike">
+		<img id="s3" src="Pictures/doktor2.jpg">
+		<img id="s4" src="Pictures/doktor1.jpg">
+		<div class="pomerilevo">
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur magni, illo placeat veniam nobis ullam cupiditate ratione, non voluptatem aspernatur cum officiis sunt optio autem. Vel sunt eos voluptate nemo, magni pariatur, velit aperiam quaerat quod a. Nobis incidunt facilis corporis eius, aut, blanditiis rerum cupiditate id, labore accusamus rem. Lorem ipsum dolor, sit amet consectetur.</p>
+		</div>
+	</div>
+
+
+
+	<svg id="test-desno" class="fadeIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#65c1e6" fill-opacity="1" d="M165,288L1440,32L1440,320L0,320Z"></path></svg>
+
+	<div class="black">
+		<div class="cblack">
+		<svg id="test-levo" class="fadeInLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#65c1e6" fill-opacity="1" d="M0,256L1440,0L1440,0L0,0Z"></path></svg>
+		<div class="wrapper">
+			<div class="main2">
+	                <div class="linija"></div>
+	                <h3>Metode</h3>
+	                <p> Ruska naturalna metoda, naucna disciplina u medicini, ili ti fizika u sluzbi zdravlja prepoznatljiva po sloganu Zvuk koji leci.</p>
+	                <p class="sredina">Postoje tri metode:</p>
+	                <div class="t_flex">
+
+
+
+	                	<div class="style_flex">
+	                		<h2>Vibroakusticna terapija</h2>
+	                		<p>Vibroakusticka metoda je fiziatrijska metoda, mehanizam delovanja je mikrovibracije i zvuk. na frekfenci od 18 do 18.000 herca, sto znaci da je potpuno naturalna metoda. Zvucna mikrovibracija je svojstvena ljudskom organizmu, jer sva misicna vlakna trepere i emituju mikrovibraciju i zvuk.</p>
+
+
+	                	</div>
+	                	<div class="style_flex mid">
+	                		<h2>Svetlosna terapija</h2>
+	                		<p>Sistem svetlosne terapije cine medicinski aparati sa dokazanim klinickim efektima u lecenju rana i bolnih stanja, kao i u lecenju odredjenih poremecaja na kozi. Terapija svetlosti je kombinacija infracrvenih i vidljivih svetlosnih talasa koji su blagotvorni u lecenju raznih problema i povreda na celijskom nivou.</p>
+
+	                	</div>
+	                	<div class="style_flex">
+	                		<h2>Audioloski trening</h2>
+	                		<p>Audioloski trening se sprovodi kod dece i odraslih koji imaju problem sluha i govora. Ispitivanje sluha i razvoj govora putem logopedskih govornih vezbi. Sprovodi se 3 x nedeljno po 15 minuta individualno sa surdoaudiologom i logopedom spec.vibroakustike ruskog strucnjaka ruske medicine.</p>
+	                	</div>
+
+
+
+	                </div>
+
+	            
+			</div>
+		
+		</div>
+		<svg id="test-levo2" class="fadeInLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  			<path fill="#011A27" fill-opacity="1" d="M0,64L1440,320L1440,320L0,320Z"></path>
+		</svg>
+	</div>
+
+	</div>
+
+
+	
+
+
+	<div id="FAQ">
+
+		<svg id="test-desno2" class="fadeIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+	  		<path fill="#011A27" fill-opacity="1" d="M300,64L1440,320L1440,0L0,0Z"></path>
+		</svg>
+			<div class="main3">
+	            <div class="linija"></div>
+	            <h3>FAQ</h3>
+	            <div class="main3Flex">
+	                <div class="pitanje">
+	                	<p><i class="fa fa-question-circle"></i>Koja je to vrsta terapije i kako deluje?</p>
+	                	<p>U pitanju je naturalna metoda lečenja koja za mehanizam delovanja ima zvuk i mikrovibracije koje su izmislili ruski istraživači, fizičari i doktori medicinskih nauka, predvođeni Vjačeslavom Aleksejevičem Fjodorovim. Kako i samo ime kaže, zasnovana je na tretmanu zvučnim mikrovibracijama jačine od 18Hz do 18.000Hz. Iako je ovaj podatak malo kome poznat, svi mišići i unutrašnji organi trepere, proizvodeći mikrovibracije. Preko 50% telesne energije utroši se na stvaranje vibracija-jer bez njih nema života. One svojom promenljivom zvučnom frekvencijom deluju na zidove krvih sudova i organa, smajujući tako otpor protoku krvi i limfe. Zahvaljujući tome, pospešuju cirkulaciju i ishranu ćelija i udaljenih tkiva </p>
+	            	</div>
+	            	<div class="pitanje">
+	            		<p><i class="fa fa-question-circle"></i>Kako izgleda vibroakustička terapija?</p>
+	                	<p>Pre same vibroakustične terapije nije potrebna priprema, osim što bi u organizam, prateći smernice stručnjaka, trebalo da unesemo dovoljno tečnosti, ne preskačući obroke. Terapija se odvija tako što pacijent sedi ili leži na udobnom spa stolu i na mesta koja je potrebno tretirati se stavlja medicinski aparat vibroakustičkog i infracrvenog dejstva(vitafon) koji ima specijalne pločice(vibrafone) koje emituju mikrovibracije i zvuk. <br>Terapija potpuno opušta pacijenta, vrlo je komforna i prijatna. Još jedna bitna informacija je da je terapija potpuno bezbolna. Često se dešava da pacijent utone u san u toku terapije, zato što deluje smirujuće i opuštajuće.</p>
+	            	</div>
+	            	</div>
+	            
+	            <div class="main3Flex">
+	            	<div class="pitanje">
+	            		<p><i class="fa fa-question-circle"></i>Ko sve može da koristi terapiju? </p>
+	                	<p>Ova naturalna ruska metoda potpuno je bezbedna, jer su reakcije koje proizvodi svojstvene ljudskom organizmu. Može se primenjivati od prvog dana života, što podrazumeva i tek rođene bebe. Takođe se može i primenjivati kod svih uzrasta, od dece preko odraslih pa sve do starijih životnih doba. Takođe je izuzetno omiljena kod sportista, jer im pomaže da poboljšaju kondiciju i podignu radnu sposobnost. Od ukupne čovekove energije preko 50% troši se da bi se proizvela mikrovibracija pri uzimanju hrane. Međutim ako organizmu damo "gotovu" mikrovibraciju putem vibroakustičke terapije, onda mu nadoknađujemo onu mikrovibraciju koju bi sam trebalo da proizvede. S druge strane, mikrovibracija je ekološki čist resurs. Povećavajući je, mi čoveku produžavamo životni vek i poboljšavamo kvalitet života.</p>
+	            	</div>
+	            	<div class="pitanje">
+	            		<p><i class="fa fa-question-circle"></i>Šta može da leči vibroakustika? </p>
+	                	<p>Vibroakustička terapija predstavlja savršen vid prevencije.Ona prvenstveno deluje na venoznu cirkulaciju, na protov krvi kroz krvne sudove i nervne centre, usposztavljajući pravilan metabolizam preko limfnog sistema i limfne drenaže. Tako deluje na imunološki sistem i otpornost organizma, sprečavajući najčešće zdravstvene probleme: viremije, alergije, kijavice, upale sinusa, probleme sa uhom, grlom i nosom. Jača organizam i daje mu snagu, a na taj način sprečava ili ublažava svakodnevni stres, tako da se i koristi kao antistres terapija.</p>  
+	            	</div>
+	            </div> 
+	        </div> <!-- end .main3 -->
+
+
+	         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  			<path fill="#65c1e6" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+		</svg>
+
+	</div> <!-- end #FAQ -->
+
+
+	  
+
+	<div id="cover3">
+		 
+		<div class="slideshow-container">
+
+		  
+		  <div class="mySlides">
+		    <q>May the Force be with you...</q>
+		    <p class="author">- Miloš Stanković</p>
+		  </div>
+
+		  <div class="mySlides">
+		    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+		    <p class="author">- Jelena Novković</p>
+		  </div>
+
+		  <div class="mySlides">
+		    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+		    <p class="author">- Jovana Šobić</p>
+		  </div>
+		   
+
+		  
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+
+		
+				<div class="dot-container">
+			  		<span class="dot" onclick="currentSlide(1)"></span>
+			  		<span class="dot" onclick="currentSlide(2)"></span>
+			  		<span class="dot" onclick="currentSlide(3)"></span>
+
+			</div> 
+		
+	</div> <!-- end #cover3 -->
+
+
+
+	<section id="kontakt2" class="kontakt2">
+			<div class="container">
+				<div class="contactInfo">
+					<div>
+						<h2> KONTAKT </h2>
+						<ul class="informacija">
+							<li>
+								<i class="fa fa-map-marker"></i>
+							 	<span> Hadži Ruvimova 50 <br>Novi Sad, Srbija </span>
+							</li>
+
+							<li>
+							 	<i class="fa fa-phone"></i>
+							 	<span> +381 69 5140 906</span>
+							</li>
+
+							<li>
+							 	<i class="fa fa-envelope-o"></i>
+							 	<span> audiologija@outlook.com </span>
+							</li>
+
+							<li>
+							 	<i class="fa fa-clock-o"></i>
+							 	<span> Radno vreme:<br>Ponedeljak-Petak: 10h-16h </span>
+							</li>
+						</ul>
+						
+					</div>
+				</div> <!--end .contactinfo-->
+
+				<div class="contactForm">
+					<div id="noneuserForma">
+						<h2>Da bi ste zakazali pregled morate biti ulogovani.</h2>
+						<button onclick="log_in_page()" id="lgn_btn">Login</button>
+					</div>
+					<div id="userForma" class="hidden-element">
+					<h2>Kontaktirajte nas</h2>
+					<form class="formBox" action="mailto:milosh_cerak@hotmail.com" method="post" enctype="text/plain">
+						
+						<div class="inputBox br1">
+							
+							<input type="text" name="Ime" required>
+							<span> First Name / Ime </span>
+						</div>
+
+						<div class="inputBox br1">
+							<input type="text" name="Prezime" required>
+							<span>Last name / Prezime</span>
+						</div>
+
+						<div class="inputBox br1">
+							<input type="text" name="Mail" required>
+							<span>E-mail adress / E-mail adresa</span>
+						</div>
+
+						<div class="inputBox br1">
+							<input type="text" name="Telefon" required>
+							<span>Mobile number / Mobilni telefon</span>
+						</div>
+
+						<div class="inputBox br2">
+							<textarea name="Komentar" required></textarea>
+							<span>Your message / Vaša poruka:</span>
+						</div>
+
+						<div class="inputBox br2">
+							<input type="submit" value="Pošalji">
+							<input type="reset" value="Obriši">
+							
+						</div>
+
+					</form>
+				</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+
+
+
+	<footer id="footer">
+
+
+		<div class="footer-left">
+			<h3> <a href="index.html" class="flogo"><img src="uho4.png"></a> </h3>
+				<p>
+					<a href="index.html">Naslovna</a>
+					·
+					<a href="onama.html">O nama</a>
+					·	
+					<a href="cenovnik.html">Cenovnik</a>
+					·
+					<a href="kontakt.html">Kontakt</a>
+				</p>
+
+				<p class="imekompanije"> <span>Audiologija</span> &copy; 2020.</p>
+				<p> Made by <a href="#" class="orange"><span class="orange">devChimera</span></a> </p>
+		</div>
+
+		<div class="footer-center">
+			<div> 
+				<i class="fa fa-map-marker"></i>
+				<p> 
+					<span> Hadži Ruvimova 50  </span>
+					  	   Novi Sad, Srbija
+				</p>
+			</div>
+
+			<div> 
+				<i class="fa fa-phone"> </i>
+				<p> +381 69 5140 906 </p>
+			</div>
+
+			<div> 
+				<i class="fa fa-envelope-o"></i>
+
+				<p>
+					<a href="mailto:audiologija@outlook.com">audiologija@outlook.com</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="footer-right">
+
+
+			<p>
+				Ukoliko imate neko pitanje mozete nas kontaktirati na sledeci nacin
+				
+			</p>
+
+			<div class="footericons">
+				<a href="https://www.facebook.com/Edukativni-Centar-Audiologija-395464263944318" target="_blank">
+					<i class="fa fa-facebook-square">
+					</i>
+				</a>
+
+				<a href="mailto:audiologija@outlook.com">
+					<i class="fa fa-envelope"></i>
+				</a>
+
+				<a href="https://www.instagram.com/ljiljana._lili" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		
+	</footer>
+
+
+
+
+
+<script src="JS/funkcije.js"></script> 
+<script>showSlides(slideIndex)</script>
+</body>
+</html>

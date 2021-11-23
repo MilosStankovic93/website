@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title></title>
+</head>
+<body>
+	<header id="header">
+		<div class="wrapper">
+
+			<div class="logo">
+				<a href="index.html"><img src="uho4.png"></a>
+			</div>
+			<nav class="nav">
+					
+				<ul>
+					<li><a href="index.html"> Naslovna </a></li>
+					<li><a href="onama.html"> O nama </a></li>	
+					<li><a href="cenovnik.html"> Cenovnik </a></li>
+					<li><a href="kontakt.html"> Kontakt </a></li>
+					<li><button onclick="log_in_page()" id="lgn_btn">Login</button></li>
+					<li><button onclick="registerpg()" id="rgr_btn">Register</button></li>
+					<li><button id="logout_btn" class="hidden-element" onclick="Logout()">Logout</button></li>
+				</ul>
+
+			</nav> <!-- end #nav -->
+
+
+		</div> <!-- end .wrapper -->
+	
+	</header>
+
+
+	<div class="kutija">
+		<div class="zakaziforma">
+			<div class="zakazi_div">
+				<p> Unesi Ime </p>
+				<input class="zakazi_inpt" id="zakazi_ime" type="text" placeholder="Ime:">
+			</div>
+
+			<div class="zakazi_div">
+				<p> Unesi Prezime </p>
+				<input class="zakazi_inpt" id="zakazi_prezime" type="text" placeholder="Prezime:">
+			</div>
+
+			<div class="zakazi_div">
+				<p> Pocetno Vreme </p>
+				<input class="zakazi_inpt" id="zakazi_vreme" type="time">
+			</div>
+
+			<div class="zakazi_div">
+				<p> Zavrsno Vreme </p>
+				<input class="zakazi_inpt" id="zakazi_vremeKraj" type="time">
+			</div>
+
+			<div class="zakazi_div">
+				<p> Unesi Datum </p>
+				<input class="zakazi_inpt" id="zakazi_datum" type="date">
+			</div>
+			<button class="zakazi_btn" id="zakazi_btn" onclick="noviPregled()">Zakazi pregled</button>
+			<div id="zak_error"></div>
+		</div>
+
+		<div class="test_zakazi_nesto">
+			<div>
+				<h2> KONTAKT </h2>
+				<ul class="informacija">
+					<li>
+						<i class="fa fa-map-marker"></i>
+					 	<span> Hadži Ruvimova 50 <br>Novi Sad, Srbija </span>
+					</li>
+
+					<li>
+					 	<i class="fa fa-phone"></i>
+					 	<span> +381 69 5140 906</span>
+					</li>
+
+					<li>
+					 	<i class="fa fa-envelope-o"></i>
+					 	<span> audiologija@outlook.com </span>
+					</li>
+
+					<li>
+					 	<i class="fa fa-clock-o"></i>
+					 	<span> Radno vreme:<br>Ponedeljak-Petak: 10h-16h </span>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+			
+	</div> <!-- end of .kutija -->
+
+
+	<script src="JS/funkcije.js"></script> 
+	<script src="JS/zakazi.js"></script>
+
+</body>
+</html>

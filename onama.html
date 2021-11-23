@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,500&display=swap" rel="stylesheet"> 
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>O nama</title>
+</head>
+<body class="onama">
+	<header id="header">
+		<div class="wrapper">
+
+			<div class="logo">
+				<a href="index.html"><img src="uho4.png"></a>
+			</div>
+			<nav class="nav">
+					
+				<ul>
+					<li><a href="index.html"> Naslovna </a></li>
+					<li><a href="onama.html"> O nama </a></li>	
+					<li><a href="cenovnik.html"> Cenovnik </a></li>
+					<li><a href="kontakt.html"> Kontakt </a></li>
+					<li><button onclick="log_in_page()" id="lgn_btn">Login</button></li>
+					<li><button onclick="registerpg()" id="rgr_btn">Register</button></li>
+					<li><button id="logout_btn" class="hidden-element" onclick="Logout();proveridelBtn()">Logout</button></li>
+				</ul>
+
+			</nav> <!-- end #nav -->
+
+
+		</div> <!-- end .wrapper -->
+	
+	</header>
+
+	
+	
+	 <div id="onama">
+	 	
+	 	<div class="wrapper">
+	 		<div class="article_flex" >
+	 		<article id="abs1" class="article">
+	 			<img src="Pictures/doca3.jpg" class="onama_slika ">
+	 			<h2>Prof.Ljiljana Sobic</h2>
+	 				<p>Specijalista edukativne medicinske rehabilitacije, licencirani spec. Vibroakustike.<br>
+	 				Stekla strucno zvanje u Beogradu i Rusiji. Na celu sa eminentnim ruskim naucnikom Vjaceslavom A. Fjodorov medju prvima u Evropi primenjuje prirodnu rusku metodu Vibroakustiku tj. mikrovibracije i zvuk, fizika u sluzbi zdravlja.</p>
+	 			<h3> Kako izgleda tretman </h3>
+	 				<p>Vibroakusticka terapija sprovodi se jednom ili dva puta dnevno. Tom prilikom licencirani vibroakusticar koristi medicinski aparat vibroakusticnog i infrocrvenog dejstva.
+	 				Nema posebne pripreme za tretman, osim sto bi u organizam, prateci smernice strucnjaka, trebalo da unesemo dovojno tecnosti ne preskacuci obroke. Po dolasku u ordinaciju pacijent leze na udobni spa sto, a tokom tretmana oseca prijatne vibracije jer mu vibroakusticar prislanja plocice preko kojih se one prenose. Sam tretman traje 25 minuta, a moze se sprovoditi dok god se ne postignu zeljeni rezultati.</p>
+
+
+	 		</article>
+
+	 		<article id="abs2" class="article2 fadeIn ">
+	 			<h2>PREDNOSTI VIBROAKUSTIKE</h2>
+	 			<p>Vibroakusticka terapija predstavlja savrseni vid prevencije. Ona prvenstveno deljuje na venoznu cirkulaciju, na protok krvi kroz krvne sudove i nervne centre, uspostavljajuci pravilan metabolizam preko lifnog sistema i lifne drenaze. Tako deluje na imunoloski sistem i na odpornost organizma sprecavajuci najcesce zdravstvene probleme: <br> viremije, alergije, kijavice, upale sinusa, probleme sa uhom, grlom i nosem, jaca organizam i daje mu snagu, a na taj nacin sprecava ili ublazava svakodnevni stres. </p>
+	 			 		</article>
+	 		<div class="clear"></div><!-- floatclear -->
+
+	 	</div><!-- end .aflex -->
+
+	 </div>
+	 
+
+
+
+	 	
+	 </div> <!-- end #onama -->
+
+
+	 <div class="makeacomment">
+	 	<textarea type="text" id="input-comment" placeholder="write your comment here..."></textarea>
+		<input type="text" id="input-name-comment" placeholder="Ime...">
+		<button id="btn-comment" class="btn-comment" onclick="napraviKomentar()">Comment</button>
+	 </div>
+
+	 <div id="comment-container">
+		
+
+
+	</div>  <!-- end .comment-container -->
+
+
+	  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  			<path fill="#65c1e6" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,154.7C384,160,480,224,576,218.7C672,213,768,139,864,128C960,117,1056,171,1152,197.3C1248,224,1344,224,1392,224L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+		</svg>
+
+
+	 <footer id="footer">
+
+
+		<div class="footer-left">
+			<h3> <a href="index.html" class="flogo"><img src="uho4.png"></a> </h3>
+				<p>
+					<a href="index.html">Naslovna</a>
+					·
+					<a href="onama.html">O nama</a>
+					·	
+					<a href="cenovnik.html">Cenovnik</a>
+					·
+					<a href="kontakt.html">Kontakt</a>
+				</p>
+
+				<p class="imekompanije"> <span>Audiologija</span> &copy; 2020.</p>
+				<p> Made by <a href="#" class="orange"><span class="orange">devChimera</span></a> </p>
+		</div>
+
+		<div class="footer-center">
+			<div> 
+				<i class="fa fa-map-marker"></i>
+				<p> 
+					<span> Hadži Ruvimova 50  </span>
+					  	   Novi Sad, Srbija
+				</p>
+			</div>
+
+			<div> 
+				<i class="fa fa-phone"> </i>
+				<p> +381 69 140 906 </p>
+			</div>
+
+			<div> 
+				<i class="fa fa-envelope-o"></i>
+
+				<p>
+					<a href="mailto:audiologija@outlook.com">audiologija@outlook.com</a>
+				</p>
+			</div>
+		</div>
+
+		<div class="footer-right">
+
+
+			<p>
+				Ukoliko imate neko pitanje mozete me kontaktirati na sledeci nacin
+				
+			</p>
+
+			<div class="footericons">
+				<a href="https://www.facebook.com/Edukativni-Centar-Audiologija-395464263944318" target="_blank">
+					<i class="fa fa-facebook-square">
+					</i>
+				</a>
+
+				<a href="mailto:audiologija@outlook.com">
+					<i class="fa fa-envelope"></i>
+				</a>
+
+				<a href="https://www.instagram.com/ljiljana._lili" target="_blank">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		
+	</footer>
+
+	<script src="JS/funkcije.js"></script>
+	<script src="JS/komentari.js"></script>
+	
+</body>
+</html>
